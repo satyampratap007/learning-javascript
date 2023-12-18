@@ -4,7 +4,7 @@
 // 0-based indexing 
 // Arrays create a shallow copy(pass the final reference of the array)
 
-const myArr = [1,2,3,4,5,6]
+// const myArr = [1,2,3,4,5,6]
 // console.log(myArr[0]);
 // console.log(myArr.length);
 
@@ -33,6 +33,22 @@ const myArr = [1,2,3,4,5,6]
 // console.log(newArray);
 // console.log(typeof(myArr));  // object
 // console.log(typeof(newArray));  // string
+
+
+// Slice vs Splice
+
+const myArr = [1,2,3,4,5,6]
+
+console.log("A", myArr);
+
+const myn1 = myArr.slice(1,3);  // won't modify the original array
+console.log(myn1);                  
+
+console.log("B", myArr);
+
+const myn2 = myArr.splice(1,3); // will modify the original array and return the sliced part and includes the last element also
+console.log(myn2);
+
 
 
 
