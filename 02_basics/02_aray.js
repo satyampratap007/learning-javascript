@@ -36,22 +36,27 @@ console.log(Array.from("Hitesh")); // here hitesh will be printed in the form of
 // Could not be able to create array as we donot mention whether I have to make array of key or value
 
 // let arr = Array.from(Object.entries({name: "Satyam", n2 : "Ram", n3 : "Shyam"}),([key,value]) =>value);
-let obj = {name: "Satyam", n2 : "Ram", n3 : "Shyam"}
+// let obj = {name: "Satyam", n2 : "Ram", n3 : "Shyam"}
 // let arr = Array.from(Object.entries(obj),([key,value]) =>value); // here we can convert and will get the op as we've mentioned what to convert into array
-let arr = Object.values(obj);
-console.log(arr);
-console.log(arr[2]);
-console.log(typeof(arr));
+// let arr = Object.values(obj);
+// console.log(arr);
+// console.log(arr[2]);
+// console.log(typeof(arr));
 
+/* Revision */
 
+// let ar = Object.values(t);
 
-const o1 = {k : "ram", k : "S"}
+// console.log(ar);
 
+const o1 = {k1 : "ram", k2 : "Satuu" , k3: "Mohan"}
 
+let op2 = Object.values(o1);
+console.log(op2);
 
+let op1 = Array.from(Object.entries(o1),([key,value])=> key);
 
-
-
+console.log(op1);
 
 let score1 = 100;
 let score2 = 200;
@@ -62,7 +67,7 @@ console.log(Array.of(score1, score2, score3));
 const a1 = [1,2,3,4];
 const a2 = [1,3,4];
 const a3 = [5,8];
-
 const new_Arr = [...a1, ...a2, ...a3];
-
 console.log(new_Arr);
+
+
