@@ -79,7 +79,16 @@ for (const key in heros) {
 
 // For each
 
+forEach(callbackFn)
+forEach(callbackFn, thisArg)
+
+
+
+
+
 const coding = ["js", "ruby", "java", "python", "cpp"]
+
+
 
 
 // coding.forEach(function (item){
@@ -130,7 +139,7 @@ const my_coding = [
 // foreach do not return any values
 const my_val = my_coding.forEach( (item) => {
     // console.log(item);
-    return item;
+    return item; // this does not make any sense
 })
 
 // console.log(my_val); // undefined
