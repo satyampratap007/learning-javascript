@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+<body style="background-color: #212121; color: white" > 
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    // function addlanguage(langName) {
+    //     const li = document.createElement('li');
+    //     li.innerHTML = `${langName}`
+    //     document.querySelector('.language').
+    //     appendChild(li)
+    // }
+
+    // More optimized way
+
+    // function add_opt_lang(lang_name){
+    //     const li = document.createElement('li');
+    //     li.appendChild(document.createTextNode(lang_name));
+    //     document.querySelector('.language').appendChild(li);        
+    // }
+
+    // addlanguage("css")
+    // addlanguage("typeScript")
+    // add_opt_lang("Golang")
+    // add_opt_lang("dart")
+
+    function new_add_lang(lang_name) {
+        const new_list = document.createElement('li');
+        new_list.appendChild(document.createTextNode(lang_name));
+        document.querySelector('.language').appendChild(new_list);
+    }
+    new_add_lang("python");
+    new_add_lang("CSS");
+    new_add_lang("C++");
+
+    // Changing Colour for my list item 
+    const change_col = document.querySelector('.language');
+    change_col.style.color = "red";
+
+    // Edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    secondLang.innerHTML = ("Mojo")
+
+    const newli = document.createElement('li');
+    newli.innerText = "ruby"
+    secondLang.replaceWith(newli);
+
+    const firstLang = document.querySelector("li:first-child");
+    firstLang.outerHTML = " <li>TypeScript </li>"
+    
+    // remove
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove();
+</script>
+</html>

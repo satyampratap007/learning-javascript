@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new Element</title>
+</head>
+<body style="background-color: #212121" "color: white">
+    <script>
+        // const div = document.createElement('h1')
+        // console.log(div);
+        // div.className = "main"
+        // div.id = Math.round(Math.random() * 10 + 1)
+        // div.setAttribute("title", "generated title")
+        // div.style.backgroundColor = "green"
+        // div.innerText = "div text test "
+        // const addText = document.createTextNode("new text")
+        // div.appendChild(addText)
+        // document.body.appendChild(div)
+
+
+        const new_div = document.createElement('div')
+        console.log(new_div);
+        new_div.className = "my_class";
+        new_div.id = "my_id";
+        new_div.setAttribute("title",  "new-title")
+        // new_div.innerText = "Testing creation";
+        // document.body.appendChild(new_div);
+        new_div.style.backgroundColor = "red"
+        const new_text = document.createTextNode("testing text");
+        new_div.appendChild(new_text);
+        document.body.appendChild(new_div)
+    </script>    
+</body>
+</html>
