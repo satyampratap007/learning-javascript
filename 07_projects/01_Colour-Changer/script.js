@@ -14,16 +14,19 @@ buttons.forEach((button) => {
 
         switch (id) {
             case 'grey':
-                body.style.backgroundColor= "grey";                
+                body.style.backgroundColor= id;                
                 break;
             case 'white':
-                body.style.backgroundColor= "white";                
+                body.style.backgroundColor= id;                
                 break;
             case 'blue':
-                body.style.backgroundColor= "blue";                
+                body.style.backgroundColor= id;                
                 break;
             case 'yellow':
-                body.style.backgroundColor= "yellow";                
+                body.style.backgroundColor= id;                
+                break;
+            case 'purple':
+                body.style.backgroundColor= id;                
                 break;
         }
 
