@@ -35,10 +35,3 @@ form.addEventListener('submit', (e) => {
     
     
 })
-.toExponential
-
-
-
-
-
-xxz
