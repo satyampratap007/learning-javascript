@@ -69,13 +69,15 @@ function displayMessage(message){
 function endGame(){
     userInput.value = '';
     userInput.setAttribute('disabled', '');
-    p.classList.add('buttton')
-    p.innerHTML = `<h2 id  = "newGame>Start new Game</h2>`;
+    p.classList.add('button')
+    p.innerHTML = `<button id = "newGame" style = "color: red;">Start new Game</button>`;
     startover.appendChild(p);
     playGame = false;
     newGame();
     
 }
+
+
 
 function newGame(){
     const newGamebutton = document.querySelector('#newGame');
