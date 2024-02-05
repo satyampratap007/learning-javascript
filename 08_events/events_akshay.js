@@ -67,4 +67,4 @@ document.querySelector("#child")
 
 // Link to learn more about Event Loop
 
-https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif
+// https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif
