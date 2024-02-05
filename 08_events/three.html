@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Async in JS</title>
 </head>
 <body>
     <h1>Async In js</h1>
+    <button id="start">Start</button>
     <button id="stop">Stop</button>
     <script>
-        // setTimeout(()=> {
-        //     console.log("Satyam");
-        // },1000);
-        let t_event = () => {
-            // console.log("Testing Event");
-            document.querySelector('h1').innerHTML = "Testing events"
+        const sayDate = (str) => {
+            const cur_time = new Date().toLocaleTimeString();
+            document.querySelector('h1').innerHTML = 
+            `${str} : ${cur_time}`;
         }
-        const change_me = setTimeout(t_event, 2000);
-        const but = document.querySelector('#stop');
-        but.addEventListener('click',() => {
-            clearTimeout(change_me);
-            console.log("Stopped");
-        }, false)
+        let intervalId = null;
+        const eve = document.querySelector('#start').addEventListener('click', ()=> {
+            intervalId = setInterval(sayDate, 1000, "Time begins");
+        }, false);
+        // on clicking stop = stop the event
+        
+        document.querySelector('#stop').addEventListener('click', () => {
+            clearInterval(intervalId);
+            document.querySelector('h1').innerHTML = "Time Stopped!";
+        }, false);
+        
     </script>
 </body>
 </html>
+
 
 
