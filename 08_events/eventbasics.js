@@ -68,5 +68,7 @@ document.querySelector('#images').addEventListener('click', (e) => {
 
 
 
+// High priority queue is also known as Microtask Queue
+
 
 
